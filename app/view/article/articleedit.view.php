@@ -23,7 +23,7 @@
                         <label for="title">Title</label>
                     </div>
                     <div class="form-floating">
-                        <textarea class="form-control" id="article" name="article" value="<?php echo $article['art_body'];?>" style="height: 100px"></textarea>
+                        <textarea class="form-control" id="article" name="article" style="height: 100px"><?php echo htmlspecialchars_decode($article['art_body']);?></textarea>
                         <label for="article">Post</label>
                     </div>
                     <div class="col-12 mt-3">
